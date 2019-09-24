@@ -1,26 +1,24 @@
 {
-  "name": "Q-A-application",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "my-forum",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "nodemon node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BossDucAnh/Q-A-application.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BossDucAnh/Q-A-application/issues"
-  },
-  "homepage": "https://github.com/BossDucAnh/Q-A-application#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
-    "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "debug": "^2.6.9",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.5.9",
+    "express": "^4.16.4",
+    "http-errors": "^1.6.3",
+    "knex": "^0.19.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
   }
 }
